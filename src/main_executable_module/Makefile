@@ -20,8 +20,7 @@ stat.o: ./../data_libs/data_stat.c
 	$(CC) $(CFLAGS) ./../data_libs/data_stat.c -c -o ./../main_executable_module/stat.o
 
 clean:
-	rm -rf *.o 
+	rm -f *.o
+	rm -f ./../build/Quest_3
 
-rebuild:
-	$(clean)
-	$(all)
+rebuild: clean all

@@ -37,6 +37,8 @@ int main() {
             printf("n/a");
         }
     }
+    
+    free(data);
 }
 
 void sort(double *array, int length) {

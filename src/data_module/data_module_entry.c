@@ -13,4 +13,6 @@ int main() {
         output(data, n);
     else
         printf("ERROR");
+
+    free;
 }

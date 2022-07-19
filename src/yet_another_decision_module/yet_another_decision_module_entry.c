@@ -14,4 +14,6 @@ void main() {
         printf("YES");
     else
         printf("NO");
+    
+    free(data);
 }

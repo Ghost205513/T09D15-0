@@ -10,8 +10,10 @@ int input(double *data, int *n) {
         data = realloc(data, *n * sizeof(double));
 
         for (int i = 0; i < *n; i++) {
-            if (scanf("%lf", &data[i]) == 0)
+            if (scanf("%lf", &data[i]) == 0){
                 flag = 1;
+                break;
+            }
         }
     }
 

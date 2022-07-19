@@ -15,6 +15,14 @@ int input(double *data, int *n) {
         }
     }
 
+    int trash = getchar();
+
+        while (trash == ' ' || trash == '\t')
+            trash = getchar();
+
+        if (trash != '\n')
+            flag = 1;
+
     return flag;
 }
 
